@@ -35,8 +35,8 @@ if __name__ == '__main__':
     )
 
     test_dataset = CustomDataset(
-        "./PlantDM/test.csv",
-        "./PlantDM/",
+        "./PlantDM_test/test.csv",
+        "./PlantDM_test/",
         transform,
         tokenizer
     )
@@ -54,7 +54,7 @@ if __name__ == '__main__':
 
     solver.build()
 
-    model_path = f'checkpoints/model_2025-05-06_16:30:01.std'        #load weight
+    model_path = f'checkpoints/PlantIF_weight.std'        #load weight
     if os.path.exists(model_path):
         print(f"[INFO] Loading model from {model_path}")
         solver.model.load_state_dict(torch.load(model_path, map_location='cuda' if torch.cuda.is_available() else 'cpu'))
