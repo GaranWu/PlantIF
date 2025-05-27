@@ -6,7 +6,7 @@ from torchvision import transforms
 from torch.utils.data import DataLoader
 
 from config import get_config
-from solver import Solver
+from solver_test import Solver
 from utils.custom_dataset import CustomDataset
 
 
