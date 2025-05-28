@@ -69,7 +69,7 @@ class MISA(nn.Module):
         rnn = nn.LSTM if self.config.rnncell == "lstm" else nn.GRU
         if self.config.use_bert:
             self.bertmodel = LSTM(class_num=118, vocab_size=500000, embedding_dim=128, hidden_dim=768, num_layers=8, dropout=0.5)
-            self.bertmodel.load_state_dict(torch.load('LSTM.mdl'))
+            # self.bertmodel.load_state_dict(torch.load('LSTM.mdl'))
             self.bertmodel.classifier = nn.Identity()
 
             # bertconfig = BertConfig.from_pretrained('/mnt/e/modelfiles/bert-base-uncased', output_hidden_states=True)
@@ -95,7 +95,7 @@ class MISA(nn.Module):
         from modelpy.DenseNet import DenseNet169, DenseNet264
         from modelpy.ResNet_50_101_152 import ResNet50, ResNet101, ResNet152
         model = ResNet18()
-        model.load_state_dict(torch.load('ResNet_18.mdl'))
+        # model.load_state_dict(torch.load('ResNet_18.mdl'))
         model.fc = nn.Linear(512, 1024)
 
         # model = ResNet34()
