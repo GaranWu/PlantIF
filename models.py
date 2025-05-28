@@ -10,7 +10,7 @@ from einops.layers.torch import Rearrange, Reduce
 sys.path.append(os.getcwd())
 # from Vit_model import ViT
 # from Vision_Transformer import VisionTransformer
-from utils import ReverseLayerF
+from utils.functions import ReverseLayerF
 
 
 class LSTM(torch.nn.Module):
