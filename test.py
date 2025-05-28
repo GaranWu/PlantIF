@@ -35,8 +35,8 @@ if __name__ == '__main__':
     )
 
     test_dataset = CustomDataset(
-        "./PlantDM_test/test.csv",
-        "./PlantDM_test/",
+        "./datasets/PlantIF_test/test.csv",
+        "./datasets/PlantIF_test/",
         transform,
         tokenizer
     )
