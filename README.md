@@ -1,4 +1,4 @@
-# PlantIF: Multimodal Semantic Interactive Fusion for Plant Disease Diagnosis
+# PlantIF: Multimodal Semantic Interactive Fusion via Graph Learning for Plant Disease Diagnosis
 
 ## Environments
 
